@@ -54,6 +54,5 @@ Read this:
 
    > Code > Preferences > User Snippets
 
-   > Select Language
-
-   > Copy the snippets from the snippets folder and paste it there
+2. Select Language
+3. Copy the snippets from the snippets folder and paste it there
