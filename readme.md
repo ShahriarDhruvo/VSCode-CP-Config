@@ -47,3 +47,13 @@
 Read this:
 
 > https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
+
+# Snippets
+
+1. Goto:
+
+   > Code > Preferences > User Snippets
+
+   > Select Language
+
+   > Copy the snippets from the snippets folder and paste it there

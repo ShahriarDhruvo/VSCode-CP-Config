@@ -1,0 +1,22 @@
+{
+	"Basic Header": {
+		"prefix": "incl",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"#define FastIO ios_base::sync_with_stdio(false), cin.tie(0)\n",
+
+			"typedef long long ll;\n",
+
+			"using namespace std;\n",
+
+			"int main()",
+			"{",
+				"\tFastIO;",
+				"\t$1\n",
+				
+				"\treturn 0;",
+			"}"
+		],
+		"description": "Create a basic header for CP"
+	}
+}

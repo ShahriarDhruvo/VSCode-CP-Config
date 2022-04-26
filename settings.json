@@ -1,39 +1,23 @@
-//for mac
-// brew install timeout
 {
-    "window.zoomLevel": 1,
-    "editor.fontSize": 13,
+    "editor.fontSize": 16,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Atom One Dark",
     "code-runner.executorMap": {
+        "go": "go run",
+        "perl": "perl",
         "javascript": "node",
 
-        "python": "cd $dir && echo 'Running...' && /opt/homebrew/bin/timeout 8 python3 '$fileName' < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
-        "java": "echo 'Compiling...' && cd $dir && javac '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 5 java '$fileNameWithoutExt' < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
-        "c": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/gcc --std=gnu17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
-
-        //"cpp": "echo 'Compiling...' && cd '$dir' && /usr/bin/g++ --std=gnu++17 '$fileName'  && echo 'Running...' && /opt/homebrew/bin/timeout 5 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'",
-        "cpp": "echo 'Compiling...' && cd $dir && /opt/homebrew/bin/g++ --std=gnu++17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/rakibulranak/Documents/input_output/input.txt > /Users/rakibulranak/Documents/input_output/output.txt && echo 'Completed!!'"
+        "python": "cd $dir && echo 'Running...' && /opt/homebrew/bin/timeout 8 python3 '$fileName' < /Users/sed/Documents/input_output/input.txt > /Users/sed/Documents/input_output/output.txt && echo 'Completed!!'",
+        "java": "cd $dir && javac '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 5 java '$fileNameWithoutExt' < /Users/sed/Documents/input_output/input.txt > /Users/sed/Documents/input_output/output.txt && echo 'Completed!!'",
+        "c": "cd $dir && /opt/homebrew/bin/gcc --std=gnu17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/sed/Documents/input_output/input.txt > /Users/sed/Documents/input_output/output.txt && echo 'Completed!!'",
+        "cpp": "cd $dir && /opt/homebrew/bin/g++ --std=gnu++17 '$fileName' && echo 'Running...' && /opt/homebrew/bin/timeout 4 ./a.out < /Users/sed/Documents/input_output/input.txt > /Users/sed/Documents/input_output/output.txt && echo 'Completed!!'"
     },
     "editor.formatOnSave": true,
     "files.autoSave": "onFocusChange",
-    "code-runner.saveFileBeforeRun": true,
     "notebook.output.textLineLimit": 500,
+    "code-runner.saveFileBeforeRun": true,
     "debug.javascript.resourceRequestOptions": {},
+
     "C_Cpp.formatting": "vcFormat",
-    // "C_Cpp.default.compilerPath": "/usr/bin/g++ --std=gnu++17",
-    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++ --std=gnu++17",
-}
-//https://dev.to/ayushpattnaik/running-c-17-on-mac-m1-47cp
-// if you want to use hombrew g++ watch the following video
-//https://www.youtube.com/watch?v=wY24ehH6mC0
-//for linux
-{
-    "window.zoomLevel": 2,
-    "code-runner.executorMap": {
-        "javascript": "node",
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-        "cpp": "echo 'Compiling...' && cd $dir && g++ -std=c++17 $fileName  && echo 'Running...' && timeout 1s ./a.out < input.txt > output.txt && echo 'Completed!!'"
-    },
-    "editor.formatOnSave": true,
-    "files.autoSave": "onFocusChange"
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++ --std=gnu++17"
 }
